@@ -1,0 +1,335 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+	<title>ASU Emergency Response</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="http://debug-software.intel.com/target/target-script-min.js#UpaRkeMbWR9tzIhqTK-FMPKoYXSA7RvpYfpb6NFqvLE"></script>
+    </head> 
+<body>
+
+    <!--------START PAGE-------->
+    <div data-role="page" data-theme="d" id="startPage">
+        
+        <!--header-->
+        <div data-role="header" data-position="fixed">
+            <a href="#helpPage">Help</a>
+            <h1></h1>             
+        </div> 
+        
+        <!--logo & title-->
+        <br/>
+        <img src="asulogo.jpg" style="max-width: 100%" style="height: auto">                  
+        <h3 style="color:#800000;text-align:center;font-stretch:semi-condensed">ASU EMERGENCY RESPONSE</h3>  
+        <br/>
+        
+        <!--buttons-->
+        <div data-role="content">
+            <a style="color:red" href="#homePage" data-role="button" >Start</a>
+            <a href="#aboutPage" data-role="button">About</a>    
+            <a href="#contactPage" data-role="button" >Contact Us</a> 
+        </div>
+    
+        <!--footer-->
+        <div data-role="footer" data-position="fixed">		
+	       <div data-role="navbar">
+		      <ul>
+			<li><a href="#alertPage" >Alerts</a></li>
+			<li><a href="#contactPage">Contacts</a></li>
+            <li><a href="#mapPage">Map</a></li>
+			<li><a href="#settingPage">Settings</a></li>
+		      </ul>
+	       </div><!-- /navbar -->
+        </div>
+    </div>
+    
+<!--------HOME PAGE-------->
+    <div data-role="page"  id="homePage">       
+    
+        <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1></h1>
+        <a href="#helpPage">Help</a>
+    </div>
+    
+    <!--title-->
+    <h2 style="text-align: center">ASU Emergency Response</h2>
+	
+    <!-----Buttons list------>
+    <div id="homePageContent" data-role="content">
+        <a style="color:red" href="#emergencyMain" data-role="button" >Emergency</a>
+        <a href="#guideMain" data-role="button">Read Guide</a>                
+        <a href="settingPage" data-role="button">Notes</a>
+        <a href="settingPage" data-role="button">Quizzes</a>
+        <a href="#aboutPage" data-role="button">About</a>
+    </div>  
+
+    <!--footer-->
+    <div data-role="footer" data-position="fixed">		
+	   <div data-role="navbar">
+        <ul>
+	      <li><a href="#alertPage">Alerts</a></li>
+		  <li><a href="#contactPage">Contacts</a></li>
+          <li><a href="#mapPage">Map</a></li>
+		  <li><a href="#settingPage">Settings</a></li>
+	   </ul>
+	 </div>
+    </div>
+
+</div>
+
+    
+<!-------READ GUIDE-------->
+<div data-role="page"  id="guideMain">       
+     
+    <!--header-->
+    <div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1 style="text-indent:20px;">Guide</h1>
+        <a href="#helpPage">Help</a>
+    </div>
+    
+    <h3 style="text-align:center">Emergency Response Guide</h3>	
+     
+    <!--------Guide Sections-------->
+    <div id="guideMain" data-role="content">	        
+	   <ul data-role="listview" data-inset="true">           
+            <li><a href="#firePage">Fire</a></li>
+            <li><a href="#floodPage">Flooding</a></li>
+            <li><a href="#powerOutPage">Power Outage</a></li>
+            <li><a href="#injuryPage">Personal Injury</a></li>
+            <li><a href="#medicalPage">Medical Emergency</a></li>
+            <li><a href="#accidentPage">Major Accident</a></li>
+            <li><a href="#hazardPage">Hazardous Materials</a></li>
+            <li><a href="#threatPage">Personal Threat, Assult, Civil Disturbance</a></li>
+            <li><a href="#evaclPage">Evacuation</a></li>
+            <li><a href="#armedPage">Armed Suspect</a></li>
+            <li><a href="#disasterPage">Natural/Wheather Disaster</a></li>
+            <li><a href="#bioPage">Radiation/Biological Spills</a></li>
+            <li><a href="#bombPage">Bomb Threat</a></li>            
+            <li><a href="#packagePage">Suspicious Package</a></li>        
+        </ul>		
+    </div>   
+
+    <!--footer-->
+    <div data-role="footer" data-position="fixed">		
+	       <div data-role="navbar">
+		      <ul>
+			<li><a href="#alertPage">Alerts</a></li>
+			<li><a href="#contactPage">Contacts</a></li>
+            <li><a href="#mapPage">Map</a></li>
+			<li><a href="#settingPage">Settings</a></li>
+		      </ul>
+	       </div><!-- /navbar -->
+        </div>
+
+</div>
+
+<!--------ABOUT-------->
+<div data-role="page"  id="aboutPage">   
+
+    <!--header-->
+	<div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>About</h1>
+        <a href="#helpPage">Help</a>
+    </div>
+    
+    <h3 style="text-align:center">About the ERG</h3>
+	
+    <div data-role="content">
+        
+        <p>The Emergency Response Guide is designed to assist in minimizing the negative effects from emergency events.</p>
+        
+            <!---Collapsible set------>
+            <div data-role="collapsible-set" >                
+                <!--Collapsible button 1-->
+                <div data-role="collapsible">                    
+                    <h3>Emergency Preparedness at ASU</h3>
+                    <div>
+                    <ul>
+                        <li>Emergencies can occur at any time</li>
+                        <li>Being physically and psychologically prepared is an individual/organizational responsibility</li>
+                        <li>Become familiar with the information found in this guide</li>
+                        <li>You will be better prepared to protect yourself and your co-workers.</li>
+                    </ul>
+                    </div>
+                        <!--/collapsible (inside Collapsible 1)-->
+                        <div data-role="collapsible">
+                            <h3>Preparedness Checklist</h3>
+                                <p><b>Keep emergency supplies in your office (medications, flashlights, comfortable shoes, bottled water, batteries, portable radio)</b></p>
+                                <p>Post an Emergency Response Guide in a visible location in your office. Ensure all staff are made aware of its location.</p>
+                                <p><b>Become familiar with all exit routes from your building.</b></p>
+                                <p>Locate the nearest fire extinguisher and pull station and register for a fire safety and fire extinguisher training course.</p>
+                                <p><b>Register for Cardiopulmonary Resuscitation (CPR), Automated External Defibrillator (AED), First Aid, Crime Prevention, or other safety training courses.</b></p>                   
+                        </div>
+                </div>
+            
+                <!--Collapsible button 2-->                  
+                <div data-role="collapsible">
+                    <h3>Emergency Training at ASU</h3>
+                    <p>Training information and links.</p>
+                </div>      
+                    
+                <!--Collapsible button 3-->  
+                <div data-role="collapsible">                    
+                    <h3>Emergency Recovery at ASU</h3>
+                    <ul>                       
+                        <li>After an emergency occurs, RECOVERY is the next step.</li> 
+                        <li>ASU is insured for losses to University-owned property (real and personal), and injury to non-employees, such as students, patrons, visitors, and volunteers (liability), and injury to employees while on-the-job (workers´ compensation).</li> 
+                        <li>A claim must be generated in order to make the loss known to appropriate ASU representatives, and ASU´s self-insurance provider.</li>
+                    </ul>
+                    
+                    <!--Collapsible Set (inside Collapsible 3)-->
+                    <div data-role="collapsible-set">                        
+                        
+                        <!--Collapsible 1 (inside Collapsible 3)-->
+                        <div data-role="collapsible">
+                            <h3>Property and Liability Losses</h3>
+                                <ul>
+                                    <li>Property claims that exceed $10,000 must be reported within 24-hours.</li> 
+                                    <li>Property claims of less than $10,000 must be reported within 90 days.</li>
+                                    <li>A death on campus or serious injury to a patron, student, or visitor must be reported within 24-hours.</li>
+                                </ul>
+                        </div>
+                    
+                        <!--Collapsible 2 (inside Collapsible 3)-->
+                        <div data-role="collapsible">
+                            <h3>Workers' Comp Losses</h3>
+                                <ul>
+                                    <li>Insurance Services at: 480.965.1851 or 480.727.9669.</li> 
+                                    <li>Information on filing and various claim forms are available on the Insurance Web Page.</li>
+>>For Workers´ Compensation Losses
+                                    <li>All workers’ compensation claims must be reported verbally within 48-hours of the occurrence by calling 602.542.9675 or 800.837.8583.</li> 
+                                    <li>Questions regarding workers´ compensation should be directed to Human Resources at 480.965.2701.</li> 
+                                    <li>Information and forms for filing a workers´ compensation claim are available at Human Resources - Forms</li>
+                                </ul>
+                        </div>
+                    
+                        <!--Collapsible 3 (inside Collapsible 3)-->
+                        <div data-role="collapsible">
+                            <h3>Follow up on potential/sustained injuries</h3>
+                                <ul>
+                                    <li>Report all accidents and incidents involving potential or sustained injury to an individual occurring on ASU property to your supervisor and to the Environmental Health & Safety Loss Prevention Coordinator at 480.965.1823.</li> 
+                                    <li>Information and forms for filing an accident and incident report are available at EH&S Forms</li>
+                                    <li>For more information about ASU Emergency Preparedness view the Emergency website.</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div> <!--/end Collapsible 3-->
+            </div>
+	</div>
+
+    <!--footer-->
+	<div data-role="footer" data-position="fixed">		
+	       <div data-role="navbar">
+		      <ul>
+			<li><a href="#alertPage">Alerts</a></li>
+			<li><a href="#contactPage">Contacts</a></li>
+            <li><a href="#mapPage">Map</a></li>
+			<li><a href="#settingPage">Settings</a></li>
+		      </ul>
+	       </div><!-- /navbar -->
+        </div>
+</div>
+
+<!----------FIRE---------->
+<div data-role="page"  id="firePage">   
+
+    <!--header-->
+	<div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Fire</h1>
+        <a href="#helpPage">Help</a>
+    </div>
+
+    <h3 style="text-align:center">Fire Emergency</h3><br/>	     
+        
+        <!--Fire Subtopics-->
+        <div data-role="content">
+            <ul data-role="listview" data-inset="false">           
+                <li><a href="#smokePage">Discover fire or smoke</a></li>
+                <li><a href="#smokePage">Fire alarm is activated or you are informed of a fire</a></li>          
+                <li><a href="#smokePage">Caught in smoke</a></li>
+                <li><a href="#smokePage">Trapped in a room</a></li>               
+                <li><a href="#smokePage">Clothing on fire</a></li>                
+                <li><a href="#smokePage">Using a fire extinguisher</a></li>  <!--make a page-->              
+                <li><a href="#smokePage">Emergency contacts</a></li>     <!--make a page-->             
+                <li><a href="#smokePage">Take fire safety quiz</a></li>
+                <li><a href="#smokePage">Register for fire safety training</a></li> 
+            </ul>     
+        </div>
+    
+    <!--footer-->    
+	<div data-role="footer" data-position="fixed">		
+	   <div data-role="navbar">
+		<ul>
+		  <li><a href="#alertPage">Alerts</a></li>
+		  <li><a href="#contactPage">Contacts</a></li>
+          <li><a href="#mapPage">Map</a></li>
+		  <li><a href="#settingPage">Settings</a></li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+    
+<!----------DISCOVER FIRE OR SMOKE---------->    
+<div data-role="page"  id="smokePage">   
+
+    <!--header-->
+	<div data-role="header" data-position="fixed">
+        <a href="javascript:history.go(-1)">Back</a>
+        <h1>Discover fire or smoke</h1>
+        <a href="#helpPage">Help</a>
+    </div><!-- /header -->
+
+    <h3 style="text-align:center">Discover Fire or Smoke</h3>
+    <!--horz line-->
+        <hr style="margin-left:20px;margin-right:20px">
+        
+        <ul>
+            <li style="margin-right:20px">If alarm is not sounding, pull fire alarm located near an exit.</li> 
+            <li style="margin-right:20px">Immediately exit the building.</li>
+            <li style="margin-right:20px">Call 911</li> 
+        </ul>
+        <!--call 911 button-->
+        <div data-role="content">                     
+            <a href="#firePage" data-role="button">>Call 911</a>           
+        </div>    
+        <hr style="margin-left:20px;margin-right:20px">
+    
+        <ul>
+            <li style="font-weight:bold;margin-right:20px">NOTE: Dialing 911 from cell phone may not go directly to ASU Police Department.</li>            
+            <li style="font-weight:bold;margin-right:20px">Give operator your ASU campus and address.</li>
+        </ul>
+        <!--find address button-->
+        <div data-role="content">               
+            <a href="#" data-role="button">Find my address</a>             
+        </div>         
+        <hr style="margin-left:20px;margin-right:20px">
+        <ul>
+            <li style="margin-right:20px">Or activate an emergency blue light call box.</li>
+        </ul>
+        <!--call box button-->
+        <div data-role="content">            
+            <a href="#" data-role="button">Locate call box</a>        
+        </div>
+    
+    <!--footer-->
+    <div data-role="footer" data-position="fixed">		
+	   <div data-role="navbar">
+		<ul>
+		  <li><a href="#alertPage">Alerts</a></li>
+		  <li><a href="#contactPage">Contacts</a></li>
+          <li><a href="#mapPage">Map</a></li>
+		  <li><a href="#settingPage">Settings</a></li>
+        </ul>
+        </div>
+    </div>
+
+</body>
+</html>
